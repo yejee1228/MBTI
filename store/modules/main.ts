@@ -73,8 +73,7 @@ const reducer = (state: MainState = initialState, action: MainAction) => {
             const result: string[] = []
             const arr = state.resultType
             for (let i = 0; i < arr.length; i++) {
-                console.log(arr[i], 'type')
-                const correct = state.corrects.filter(correct => correct.key === arr[i])[0] //{key: "EI" options:  [{key: 'E', count: 0},{key: 'I', count: 3}]
+                const correct = state.corrects.filter(correct => correct.key === arr[i])[0]
                 const maxValue = correct.options[0].count >= correct.options[1].count ? correct.options[0].key : correct.options[1].key
                 result[i] = maxValue
             }
