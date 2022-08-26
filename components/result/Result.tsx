@@ -55,7 +55,7 @@ const Result = () => {
                             &nbsp;
                             <W.ResultCharacterText color={'#FFF086'}>{result && result.data.name}</W.ResultCharacterText>
                         </W.ResultCharacter>
-                        {/* <W.ResultWindowWrap>
+                        <W.ResultWindowWrap>
                             <W.ResultContentWrap>
                                 <W.ResultImage src={result && '/images/' + result.data.key + '.png'} />
                                 <W.TypeTalk>{result && result.data.key} 유형</W.TypeTalk>
@@ -79,7 +79,7 @@ const Result = () => {
                                     {result && result.data.description[3]}
                                 </W.ResultDescription>
                             </W.ResultContentWrap>
-                        </W.ResultWindowWrap> */}
+                        </W.ResultWindowWrap>
                         <W.Relationship>
                             <W.ResultChmiWindowWrap>
                                 <W.ResultContentWrap onClick={() => router.push(`/result?key=${bestResult?.data.key}`)}>
