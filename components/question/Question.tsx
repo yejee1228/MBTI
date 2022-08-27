@@ -48,9 +48,7 @@ const QuestionWindow = () => {
         if (page === pageCount - 1) {
             dispatch(getResult())
             setTimeout(function () {
-                router.push({
-                    pathname: `/result/${result}`,
-                })
+                router.push(`/result?key=${result}`)
             }, 500)
         } else {
             setTimeout(function () {
