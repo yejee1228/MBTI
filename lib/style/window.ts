@@ -102,8 +102,8 @@ background-color: ${({ correct }) => correct ? `#4f6772` : `#F1F1F1`};
 border: none;
 cursor: pointer;
 &:hover{
-    background-color: #7dbeea;
     color: #ffffff;
+    background-color: ${({ correct }) => correct ? `#4f6772` : `#7dbeea`};
 }
 `
 export const ResultButtonSpan = styled.span`
