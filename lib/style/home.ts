@@ -35,6 +35,7 @@ font-size: 26px;
 line-height: 26px;
 text-align: center;
 letter-spacing: -1.5px;
+cursor: pointer;
 @media screen and (min-width: 500px){
     width: 350px;
 }

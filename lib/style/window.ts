@@ -98,8 +98,13 @@ line-height: 16px;
 text-align: center;
 letter-spacing: -0.9px;
 color: ${({ correct }) => correct ? `#FFFFFF` : `#494949`};
-background-color: ${({ correct }) => correct ? `#7dbeea` : `#F1F1F1`};
+background-color: ${({ correct }) => correct ? `#4f6772` : `#F1F1F1`};
 border: none;
+cursor: pointer;
+&:hover{
+    background-color: #7dbeea;
+    color: #ffffff;
+}
 `
 export const ResultButtonSpan = styled.span`
 width:100%;
@@ -246,6 +251,10 @@ line-height: 23px;
 letter-spacing: -0.7px;
 text-align:left;
 color: #000000;
+b{
+    font-size: 16px;
+    color: #4f6772;
+}
 `
 export const Relationship = styled.div`
 width: calc(100% - 65px);
@@ -332,6 +341,7 @@ export const ShareImg = styled.img`
 width: 46px;
 height: 46px;
 margin-right:23px;
+cursor: pointer;
 @media(max-width: 420px){
     margin-right: 15px;
 }
@@ -353,5 +363,5 @@ letter-spacing: -0.9px;
 color: #FFFFFF;
 background: #F56A6A;
 border: 2.2px solid #000000;
-
+cursor: pointer;
 `
