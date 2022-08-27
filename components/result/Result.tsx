@@ -67,7 +67,7 @@ const Result = () => {
                         <W.ResultWindowWrap>
                             <W.ResultContentWrap>
                                 <W.ResultDescription>
-                                    <b>{result && result.data.description[0]}</b>
+                                    <b>{result?.data.key}는 {result && result.data.description[0]}</b>
                                     <br />
                                     <br />
                                     {result && result.data.description[1]}
