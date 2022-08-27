@@ -1,8 +1,6 @@
-import { Result } from 'components/result'
+import Result from 'components/result'
 
 const index = () => {
-
-
     return (
         <Result />
     );
