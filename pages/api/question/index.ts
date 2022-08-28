@@ -31,7 +31,7 @@ const question = [
   },
   {
     seq: "FT",
-    text: "친구가 우울해서 염색했다고 한다. \n내가 할 말은?",
+    text: "친구가 우울해서 염색했다고 한다. 내가 할 말은?",
     image: "/images/FT.png",
     option1: "무슨 일 있어? 왜 우울해?",
     option2: "오! 무슨색??",
@@ -40,7 +40,7 @@ const question = [
   },
   {
     seq: "PJ",
-    text: "여행을 가기로 했다. \n당신은?",
+    text: "여행을 가기로 했다. 당신은?",
     image: "/images/PJ.png",
     option1: "발 닿는 데로 가는게 진정한 여행이지.",
     option2: "시간과 장소를 꼼꼼히 계획한다.",
