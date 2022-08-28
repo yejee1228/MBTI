@@ -176,9 +176,19 @@ border-radius: 0 0 25px 25px;
 export const ResultCharacterText = styled.span`
 color: ${(props) => props.color};
 `
-
+export const ResultExpressionsWrap = styled.div`
+@media(min-width: 820px){
+    display: flex;
+    width: 80%;
+    div{
+        &.last-child{
+            margin-right: 0px
+        }
+    }
+}
+`
 export const ResultWindowWrap = styled.div`
-width: calc(100% - 65px);
+width: 80%;
 height: auto;
 padding: 20px;
 margin: 17.5px;
@@ -196,8 +206,18 @@ border-radius: 18px;
 export const ResultContentWrap = styled.div`
 width: 100%;
 height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+div{
+    &.last-child{
+        height: 180px;
+        width: 40%;
+        margin-left: 40px;
+    }
+}
 `
-
 export const ResultImage = styled.div<{ src: string }>`
 width: 290px;
 height: 290px;
@@ -211,36 +231,25 @@ background-repeat: no-repeat;
     height: 225px;
 }
 `
-export const TypeTalk = styled.p`
-width: 100%;
-height: fit-content;
-padding: 3px 10px;
-margin-bottom: 0;
-background: #9ccae9;
-color: #ffffff;
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 19px;
-text-align: center;
-letter-spacing: -1px;
-border-radius: 20px 20px 0 0;
-border-bottom: 1px solid #4f6772;
-`
 export const Expression = styled.p`
 width: 100%;
-height: auto;
-margin: 0;
+height: fit-content;
+margin: 20px;
 padding: 10px 5px;  
+display: flex;
+align-items: flex-start;
+align-items: center;
+justify-content: center;
 font-style: normal;
-font-weight: 500;
-font-size: 14px;
+font-weight: 800;
+font-size: 20px;
 line-height: 20px;
 text-align: center;
 letter-spacing: 0.2px;
-color: #000000;
-background: #f9da92;
-border-radius: 0 0 20px 20px;
+color: #4f6772;
+svg{
+    width: 2em;
+}
 `
 export const ResultDescription = styled.div`
 padding: 13px 14px;
@@ -257,11 +266,12 @@ b{
 }
 `
 export const Relationship = styled.div`
-width: calc(100% - 65px);
+width: 80%;
 margin: 17.5px 32.5px;
 display: flex;
 justify-content: space-between;
 @media(max-width: 420px){
+    width: calc(100% - 55px);
     margin: 27.5px;
 }
 `
@@ -305,18 +315,18 @@ width: 200px;
 height: 200px;
 background: url(${({ url }) => url});
 background-size: cover;
-@media(max-width: 420px){
-    width: 98px;
-    height: 98px;
-}
 @media(max-width:767px){
     width: 120px;
     height: 120px;
 }
+@media(max-width: 420px){
+    width: 98px;
+    height: 98px;
+}
 `
 
 export const ChmiName = styled.div`
-padding: 15px 35px 29px 35px;
+padding: 29px 35px;
 font-family: 'Noto Sans CJK KR';
 font-style: normal;
 font-weight: 400;
@@ -350,7 +360,7 @@ cursor: pointer;
 }
 `
 export const ReturnButton = styled.div`
-width: 70%;
+width: 80%;
 height: 49px;
 padding: 13px 0;
 margin: 40px 0;

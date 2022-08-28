@@ -4,6 +4,7 @@ import { useResult, useResultBestChemi, useResultWorstChemi } from './queries';
 import { useSelector } from 'react-redux';
 import { RootState } from 'store/modules';
 import { useEffect } from 'react';
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Result = () => {
     const router = useRouter()
@@ -58,9 +59,8 @@ const Result = () => {
                         <W.ResultWindowWrap>
                             <W.ResultContentWrap>
                                 <W.ResultImage src={result && '/images/' + result.data.key + '.png'} />
-                                <W.TypeTalk>{result && result.data.key} 유형</W.TypeTalk>
                                 <W.Expression color='#000D50'>
-                                    {result && result.data.expression}
+                                    <RiDoubleQuotesL />&nbsp;{result && result.data.expression}&nbsp;<RiDoubleQuotesR />
                                 </W.Expression>
                             </W.ResultContentWrap>
                         </W.ResultWindowWrap>
