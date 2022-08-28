@@ -188,7 +188,7 @@ border-radius: 18px;
 &.last-child{
     margin-right: 0px
 }
-@media(max-width: 420px){
+@media(max-width: 424px){
     width: calc(100% - 55px);
     margin: 12.5px;
     padding: 10px;
@@ -217,7 +217,7 @@ margin-top: 17px;
 background : url(${({ src }) => src});
 background-size: contain;
 background-repeat: no-repeat;
-@media(max-width: 420px){
+@media(max-width: 424px){
     width: 200px;
     height: 200px;
 }
@@ -261,7 +261,7 @@ width: 80%;
 margin: 17.5px 32.5px;
 display: flex;
 justify-content: space-between;
-@media(max-width: 420px){
+@media(max-width: 424px){
     width: calc(100% - 55px);
     margin: 12.5px;
 }
@@ -273,7 +273,7 @@ cursor: pointer;
 &.last-child{
     margin-right: 0px
 }
-@media(max-width: 420px){
+@media(max-width: 424px){
     width: calc(50% - 5px);
     padding: 10px;
 }
@@ -289,7 +289,7 @@ line-height: 22px;
 text-align: center;
 letter-spacing: -1px;
 color: #000000;
-@media(max-width:420px){
+@media(max-width:424px){
     font-size: 13px;
 }
 `
@@ -312,7 +312,7 @@ background-size: cover;
     width: 120px;
     height: 120px;
 }
-@media(max-width: 420px){
+@media(max-width: 424px){
     width: 93px;
     height: 93px;
 }
@@ -327,7 +327,7 @@ line-height: 10px;
 text-align: center;
 letter-spacing: -0.7px;
 color: #000000;
-@media(max-width: 420px){
+@media(max-width: 424px){
     padding: 15px 0 29px;
 }
 `
@@ -335,7 +335,7 @@ export const ShareBox = styled.div`
 width: 100%;
 margin: 21px auto;
 padding: 17px 74px 0 74px;
-@media(max-width: 420px){
+@media(max-width: 424px){
     padding: 17px 0 0
 }
 `
@@ -344,7 +344,7 @@ width: 46px;
 height: 46px;
 margin-right:23px;
 cursor: pointer;
-@media(max-width: 420px){
+@media(max-width: 424px){
     margin-right: 15px;
 }
 &:last-child{
