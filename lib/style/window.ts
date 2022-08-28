@@ -36,7 +36,6 @@ background: linear-gradient(90deg, #4f6772 0%, #4f6772 99.54%);
 border: 1.4px solid #4f6772;
 border-radius: 4.5px;
 `
-
 export const Proceeded = styled.div<{ count: number, page: number }>`
 width: calc(100% / ${({ count }) => count} - 1px);
 height: 4px;
@@ -44,7 +43,6 @@ position:absolute;
 left: calc(100% / ${({ count }) => count} * ${({ page }) => page} + ${({ page }) => 0.5 * page}px);
 top: 0;
 background: #ffcb51;
-
 &: first-child{
     border-radius: 4.5px 0px 0px 4.5px;
 }
@@ -52,15 +50,12 @@ background: #ffcb51;
     border-radius: 0px 4.5px 4.5px 0px;
 }
 `
-
 export const BeforeProgress = styled(Proceeded)`
 background: #e7e7e7;
 `
-
 export const QuestionBox = styled.div`
 margin: 28px 0;
 `
-
 export const QuestionText = styled.span<{ color: string }>`
 color: ${({ color }) => color};
 font-family: 'SF Pro Display';
@@ -70,7 +65,6 @@ font-size: 18px;
 line-height: 28px;
 letter-spacing: -2.4px;
 `
-
 export const QuestionImageWrap = styled.div`
 text-align: -webkit-center;
 `
@@ -82,7 +76,6 @@ padding-top : 23px;
     width:80%;
 }
 `
-
 export const ResultBox = styled.div`
 text-align: -webkit-center;
 `
@@ -113,6 +106,7 @@ top: 50%;
 left: 50%;
 transform: translateX(-50%) translateY(-50%);
 `
+
 //result
 export const ResultWrap = styled.div`
 width: 100%;
@@ -120,7 +114,6 @@ height: fit-content;
 padding: 15px;
 text-align: -webkit-center;
 `
-
 export const ResultTypeName = styled.p`
 width: 80%;
 height: 55px;
@@ -141,7 +134,6 @@ text-shadow: 1px 1px 0px #ffcb51;
 align-items: center;
 justify-content: center;
 `
-
 export const ResultTypeText = styled.p`
 width: 80%;
 height: 38px;
@@ -158,7 +150,6 @@ background: #ffcb51;
 border-radius: 25px 25px 0 0;
 border-bottom: 2px solid #4f6772;
 `
-
 export const ResultCharacter = styled.div`
 width: 80%;
 height: 49px;
@@ -172,7 +163,6 @@ text-align: center;
 letter-spacing: -1.5px;
 border-radius: 0 0 25px 25px;
 `
-
 export const ResultCharacterText = styled.span`
 color: ${(props) => props.color};
 `
@@ -272,7 +262,7 @@ display: flex;
 justify-content: space-between;
 @media(max-width: 420px){
     width: calc(100% - 55px);
-    margin: 27.5px;
+    margin: 12.5px;
 }
 `
 export const ResultChmiWindowWrap = styled(ResultWindowWrap)`
@@ -298,7 +288,6 @@ text-align: center;
 letter-spacing: -1px;
 color: #000000;
 `
-
 export const Chmi = styled.div`
 font-family: 'SF Pro Display';
 font-style: normal;
@@ -309,7 +298,6 @@ text-align: center;
 letter-spacing: -1px;
 color: #000000;
 `
-
 export const ChmiImg = styled.div<{ url: string }>`
 width: 200px;
 height: 200px;
@@ -324,7 +312,6 @@ background-size: cover;
     height: 98px;
 }
 `
-
 export const ChmiName = styled.div`
 padding: 29px 35px;
 font-family: 'Noto Sans CJK KR';
