@@ -191,6 +191,7 @@ border-radius: 18px;
 @media(max-width: 420px){
     width: calc(100% - 55px);
     margin: 12.5px;
+    padding: 10px;
 }
 `
 export const ResultContentWrap = styled.div`
@@ -217,8 +218,8 @@ background : url(${({ src }) => src});
 background-size: contain;
 background-repeat: no-repeat;
 @media(max-width: 420px){
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
 }
 `
 export const Expression = styled.p`
@@ -273,7 +274,8 @@ cursor: pointer;
     margin-right: 0px
 }
 @media(max-width: 420px){
-    width: calc(50% - 15px);
+    width: calc(50% - 5px);
+    padding: 10px;
 }
 `
 export const TitleSpan = styled.div`
@@ -281,12 +283,15 @@ padding-top: 19px;
 padding-bottom: 9px;
 font-family: 'SF Pro Display';
 font-style: normal;
-font-weight: 400;
+font-weight: 600;
 font-size: 18px;
 line-height: 22px;
 text-align: center;
 letter-spacing: -1px;
 color: #000000;
+@media(max-width:420px){
+    font-size: 13px;
+}
 `
 export const Chmi = styled.div`
 font-family: 'SF Pro Display';
@@ -308,8 +313,8 @@ background-size: cover;
     height: 120px;
 }
 @media(max-width: 420px){
-    width: 98px;
-    height: 98px;
+    width: 93px;
+    height: 93px;
 }
 `
 export const ChmiName = styled.div`
