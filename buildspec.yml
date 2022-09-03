@@ -1,0 +1,12 @@
+version: 0.1
+phases:
+   install:
+     commands:
+       - yarn
+   build:
+     commands:
+       - yarn build
+       - yarn export
+artifacts: 
+   files:     - '**/*'
+   base-directory: 'dist'
