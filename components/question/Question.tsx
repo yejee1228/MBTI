@@ -34,7 +34,6 @@ const QuestionWindow = () => {
     const { data } = useQuestions()
 
     useEffect(() => {
-
         if (data) {
             setQuestion(data.data[questionPage])
             setPageCount(data.data.length)
@@ -44,7 +43,7 @@ const QuestionWindow = () => {
 
     const nextPage = (option: number, key: string, correct: string) => {
         setCorrect(option)
-        dispatch(setResult(key, correct))
+        dispatch(setResult(page, correct))
         if (page === pageCount - 1) {
             dispatch(getResult())
             setTimeout(function () {
