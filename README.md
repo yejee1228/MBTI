@@ -2,6 +2,8 @@
 
 - 간단한 MBTI테스트
 
+- ```React.js```, ```Next.js```, ```Typescript```, ```Redux```, ```React Query```, ```Styled-components```
+
 - 반응형 UI (모바일과 태블릿, pc)
 
 - 뒤로가기 버튼 시 이전 페이지로 이동 가능, 결과 데이터 공유 기능.
